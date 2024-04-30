@@ -15,6 +15,7 @@ func dictionary() {
     
     //Values des Dictionaries
     let values = dict.values
+    print(values)
     
     //Keys des Dictionaries
     let keys = dict.keys
@@ -26,23 +27,30 @@ func dictionary() {
     dict["John"] = 26
     
     //Neues Key-Value Paar hinzufügen
-    dict["Klaus"] = 50
+    dict["Chris"] = 35
     
     //Element aus Dictionary löschen
     dict.removeValue(forKey: "John")
     
-    //Über Dictionary iterieren
-    for (name, age) in dict {
-        print("\(name) ist \(age) Jahre alt.")
-    }
     
-    for name in dict.keys {
-        print(name)
+    //Über Dictionary iterieren
+    
+    for key in dict.keys {
+        print(key)
     }
     
     for age in dict.values {
         print(age)
     }
+    
+    for (name, age) in dict {
+        print("\(name) ist \(age) Jahre alt.")
+    }
+    
+    for entry in dict {
+        print("\(entry.key), \(entry.value)")
+    }
+    
     
     
     //Weitere Dictionary-Operationen: isEmpty, count, contains, merge, filter, contains(where: {$0.keys == "John"})

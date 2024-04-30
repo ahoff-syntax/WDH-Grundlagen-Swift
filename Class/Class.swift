@@ -17,8 +17,6 @@ class Dog {
     let breed: String
     var weight: Double
     
-    
-    
     init(name: String, age: Int, breed: String, weight: Double) {
         self.name = name
         self.age = age
@@ -40,13 +38,12 @@ class Dog {
 //Vererbung
 
 class Labrador: Dog {
-    
-    init(name: String, age: Int, weight: Double) {
-        super.init(name: name, age: age, breed: "Labrador", weight: weight)
+    override init(name: String, age: Int, breed: String, weight: Double) {
+        super.init(name: name, age: age, breed: breed, weight: weight)
     }
     
     override func feed() {
-        weight *= 1.2
+        weight *= 1.1
     }
     
     func fetchBall() {

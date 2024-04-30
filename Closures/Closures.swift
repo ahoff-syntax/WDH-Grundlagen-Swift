@@ -24,16 +24,21 @@ func closures() {
     }
     printNameFunction(name: "John")
     
-    let printNameClosure: (String) -> Void = { name in
+    
+    /*let printNameClosure: (String) -> Void = { name in
+        print(name)
+    }*/
+    
+    let printNameClosure: (String) -> Void
+    printNameClosure = { name in
         print(name)
     }
     
-    //let printNameClosure: (String) -> Void 
-    // printNameClosure = { name in
-    //      print(name)
-    // }
     
     printNameClosure("John")
+
+    
+    
     
     
     //Verwendung
@@ -43,25 +48,30 @@ func closures() {
         print(name)
     })
     
+    //names.forEach(<#T##body: (String) throws -> Void##(String) throws -> Void#>)
+    
     let printer: (String) -> Void = { name in
-        print(name)
+        print("Hallo \name!")
     }
     
     names.forEach(printer)
     
     
+    
     //Funktion, die eine Closure als Argument bekommt
     
     func performOperation(a: Int, b: Int, operation: (Int, Int) -> Int) {
-        print(operation(a, b))
+       print(operation(a, b))
     }
     
     //Closures
-    let addition: (Int, Int) -> Int = { a, b in
+    let addition: (Int, Int) -> Int = {a, b in
         a + b
     }
-    let subtraktion: (Int, Int) -> Int = { $0 - $1 }
-    let multiplikation: (Int, Int) -> Int = { $0 * $1 }
+    let subtraktion: (Int, Int) -> Int = {a, b in
+        a - b
+    }
+    let multiplikation: (Int, Int) -> Int = {$0 * $1}
     
     
     performOperation(a: 5, b: 4, operation: addition)
@@ -70,28 +80,32 @@ func closures() {
     
 //---------------------------------------
     //Higher Order Functions
-    //- Funktionen, die Funktionen als Argumente enthält oder Funktionen als Ergebnis liefert
+    //- Funktionen, die Funktionen als Argumente erthält oder Funktionen als Ergebnis liefert
     
     var numbers: [Int] = [7, 11, 5, 9, 2, 1, 4]
     
     //filter
-    let evenNumbers: [Int] = numbers.filter({$0 % 2 == 0})
-    let evenNumbers2 = numbers.filter{ num in num % 2 == 0}
+    let evenNumbers: [Int] = numbers.filter{$0 % 2 == 0}
+    let evenNumbers2 = numbers.filter{num in num % 2 == 0}
+    
+    print(evenNumbers)
     
     //contains
-    let contains = numbers.contains(where: {$0 == 2})
+    let containsTwo: Bool = numbers.contains(where: {$0 == 2})
     
     
     //sorted
-
     let sortedNumbers = numbers.sorted(by: {$0 < $1})
+    
+   print(numbers)
     
     //sort
     numbers.sort()
-    
+   
+    print(numbers)
     
     //map
-    
     let doubledNumbers: [Int] = numbers.map({$0 * 2})
     
+    print(doubledNumbers)
 }

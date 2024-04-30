@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90A79A4D2BDFDE8400A1F271 /* WDH_Swift_GrundlagenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A79A4C2BDFDE8400A1F271 /* WDH_Swift_GrundlagenApp.swift */; };
 		90A79A9C2BE0FF3A00A1F271 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A79A9B2BE0FF3A00A1F271 /* main.swift */; };
 		90A79AA02BE0FF4800A1F271 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A79A622BE0CCF300A1F271 /* Closures.swift */; };
 		90A79AA82BE0FFCF00A1F271 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A79AA72BE0FFCF00A1F271 /* main.swift */; };
@@ -81,7 +80,6 @@
 
 /* Begin PBXFileReference section */
 		90A79A492BDFDE8400A1F271 /* WDH-Swift-Grundlagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WDH-Swift-Grundlagen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90A79A4C2BDFDE8400A1F271 /* WDH_Swift_GrundlagenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDH_Swift_GrundlagenApp.swift; sourceTree = "<group>"; };
 		90A79A5C2BDFDFDD00A1F271 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		90A79A5E2BE0C58A00A1F271 /* Schleifen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schleifen.swift; sourceTree = "<group>"; };
 		90A79A602BE0C59400A1F271 /* Verzweigungen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verzweigungen.swift; sourceTree = "<group>"; };
@@ -158,13 +156,12 @@
 		90A79A402BDFDE8400A1F271 = {
 			isa = PBXGroup;
 			children = (
-				90A79A4B2BDFDE8400A1F271 /* WDH-Swift-Grundlagen */,
-				90A79A9A2BE0FF3A00A1F271 /* Closures */,
+				90A79AD22BE1000000A1F271 /* Dictionary */,
 				90A79AA62BE0FFCF00A1F271 /* Verzweigungen */,
 				90A79AB12BE0FFDE00A1F271 /* Schleifen */,
-				90A79ABC2BE0FFEB00A1F271 /* Class */,
+				90A79A9A2BE0FF3A00A1F271 /* Closures */,
 				90A79AC72BE0FFF400A1F271 /* Struct */,
-				90A79AD22BE1000000A1F271 /* Dictionary */,
+				90A79ABC2BE0FFEB00A1F271 /* Class */,
 				90A79A4A2BDFDE8400A1F271 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -181,22 +178,6 @@
 				90A79AD12BE1000000A1F271 /* Dictionary */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		90A79A4B2BDFDE8400A1F271 /* WDH-Swift-Grundlagen */ = {
-			isa = PBXGroup;
-			children = (
-				90A79A5B2BDFDECF00A1F271 /* Themen */,
-				90A79A4C2BDFDE8400A1F271 /* WDH_Swift_GrundlagenApp.swift */,
-			);
-			path = "WDH-Swift-Grundlagen";
-			sourceTree = "<group>";
-		};
-		90A79A5B2BDFDECF00A1F271 /* Themen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Themen;
 			sourceTree = "<group>";
 		};
 		90A79A9A2BE0FF3A00A1F271 /* Closures */ = {
@@ -447,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A79A4D2BDFDE8400A1F271 /* WDH_Swift_GrundlagenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

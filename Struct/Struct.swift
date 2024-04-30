@@ -20,7 +20,10 @@ struct Person {
 var person1 = Person(name: "John", age: 26)
 var person2 = Person(name: "Alice", age: 30)
 
-// person1.age = 30
+//person1.age = 27
+
+
+
 
 
 
@@ -37,3 +40,4 @@ struct Movie {
 }
 
 let movie = Movie(name: "Harry Potter", duration: 120)
+
